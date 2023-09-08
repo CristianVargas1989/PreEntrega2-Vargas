@@ -3,8 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border: 1px solid red;  
+    box-sizing: border-box; 
 }
 
 body {
@@ -13,7 +12,7 @@ body {
     color: rgb(17, 214, 17);
 }
 
-header {
+.contenedorHeader {
     height: 100vh;
     background-image: url(../assets/img/Dublin.jpg);
     background-size: cover;
@@ -31,6 +30,7 @@ header {
 
 .logo {
     width: 15%;
+    margin-left: 5%;
 }
 
 .navegacion {
@@ -79,18 +79,12 @@ main {
     color: black;
     height: 100vh;
 }
-
-.cards {
-    text-align: center;
-    width: 98%;
-    margin: 0 auto;
-}
-
-.cards h2 {
-    font-size: 2rem;
-    font-family: sans-serif;
-    padding-top: 10px;
-    color: white
+.contenedorCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
 }
 
 .card {
@@ -99,6 +93,7 @@ main {
     box-shadow: 10px 4px 21px 12px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 4px 21px 12px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 4px 21px 12px rgba(0, 0, 0, 0.75);
+    background-color: orange;
 }
 
 .card img {
@@ -111,3 +106,4 @@ footer {
     color: black;
     text-align: center;
 }
+

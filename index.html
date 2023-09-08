@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irlanda para viajeros</title>
-    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon">    
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon">
+    <!--CSS BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-    <header>
+    <header class="contenedorHeader">
         <div class="logoPortada">
-            <a href="#"><img class="logo" src="./assets/img/logo irlanda.jfif" alt="Logo"></a>
+            <a href="index.html"><img class="logo" src="./assets/img/logoIrlanda.png" alt="Logo"></a>
         </div>
         <nav class="navegacion">
             <ul>
@@ -33,23 +36,32 @@
         </section>
     </header>
     <main>
-        <hr>
-        <section class="cards">
-            <h2>Recorre Irlanda con nosotros</h2>
-            <div class="card">
-                <a href=""><img src="./assets/img/galway.jpg" alt="Ciudad de Galway"></a>
-                <h3>Conoce las ciudades</h3>
+        <section class="contenedorCards">
+            <div class="card" style="width: 20rem;">
+                <img src="./assets/img/galway.jpg" class="card-img-top ms-3 col-xd-4 col-md-6 col-sd-12" alt="Ciudad de Galway">
+                <div class="card-body">
+                    <h5 class="card-title">Conoce las ciudades</h5>
+                    <p class="card-text">Recorre las fantasticas ciudades de Irlanda.</p>
+                    <a href="./pages/ciudades.html" class="btn btn-primary">Conoce las ciudades</a>
+                </div>
             </div>
-            <div class="card">
-                <a href=""><img src="./assets/img/temple bar.jpg" alt="Temple bar -Zona de Dublin"></a>
-                <h3>Vivi las experiencias</h3>
+            <div class="card" style="width: 20rem;">
+                <img src="./assets/img/temple bar.jpg" class="card-img-top ms-3 col-xd-4 col-md-6 col-sd-12" alt="Temple Bar">
+                <div class="card-body">
+                    <h5 class="card-title">Vivi las experiencias</h5>
+                    <p class="card-text">Conoce todo lo que este hermoso pais tiene para ofrecerte.</p>
+                    <a href="./pages/quehacer.html" class="btn btn-primary">Que hacer</a>
+                </div>
             </div>
-            <div class="card">
-                <a href=""><img src="./assets/img/u2.jpg" alt="Banda U2"></a>
-                <h3>Irlanda en el cine y la musica</h3>
+            <div class="card" style="width: 20rem;">
+                <img src="./assets/img/u2.jpg" class="card-img-top ms-3 col-xd-4 col-md-6 col-sd-12" alt="Banda U2">
+                <div class="card-body">
+                    <h5 class="card-title">Irlanda en el cine y la musica</h5>
+                    <p class="card-text">Conoce la cultura irlandesa a traves de sus magnificos cantantes y actores.</p>
+                    <a href="./pages/cultura.html" class="btn btn-primary">Cultura</a>
+                </div>
             </div>
         </section>
-        <hr>
     </main>
     <footer>
         <p>Todos los derechos reservados© - Cristian R. Vargas - https://www.linkedin.com/in/cristian-vargas-a40a1a18a/
@@ -60,6 +72,9 @@
             <a href=""><img src="" alt="twitter"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
